@@ -12,8 +12,6 @@ vendors:
       version: "0.2.0"
     qr-code-styling:
       version: "1.6.0-rc.1"
-    font-awesome:
-      version: "4.7.0"
     viewerjs:
       version: "1.11.6"
 
