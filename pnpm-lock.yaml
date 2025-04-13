@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      turbofely:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       autoprefixer:
         specifier: ^10.4.19
@@ -1008,6 +1012,9 @@ packages:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
+  turbofely@1.0.0:
+    resolution: {integrity: sha512-kPOL+fURSTF6ZXGVSAgWsS5A+wXGmAl2mLamLpQIyMS8wAF+/QKJqTjY02TL/f4PkVzm7cKw7rRbeywNF4/iiQ==}
+
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -1972,6 +1979,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  turbofely@1.0.0: {}
 
   universalify@2.0.1: {}
 

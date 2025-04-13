@@ -82,7 +82,7 @@ const buildJSOpts = {
     "src/js/kr-core.js",
     "src/js/kr-theme.js",
     "src/js/kr-search.js",
-    "src/js/kr-tfl.js",
+    // "src/js/kr-tfl.js",
     "src/js/kr-modal/donate.js",
     "src/js/kr-modal/share.js",
   ],
@@ -94,9 +94,19 @@ const buildJSOpts = {
   target: ["es2020", "chrome58", "edge18", "firefox57", "node12", "safari11"],
 };
 
+const buildTflOpts = {
+  entryPoints: ["src/js/kr-tfl.js"],
+  outdir: "source/js",
+  bundle: true,
+  minify: false,
+  plugins: [],
+  target: ["es2020", "chrome58", "edge18", "firefox57", "node12", "safari11"],
+};
+
 module.exports = {
   buildCSSOpts,
   buildHighlightJSCSSOpts,
   buildPrismJSCSSOpts,
   buildJSOpts,
+  buildTflOpts,
 };

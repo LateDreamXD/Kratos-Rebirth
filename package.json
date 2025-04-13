@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-kratos-rebirth",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.3+ldpatch",
   "description": "A lovely yet modern theme for Hexo.",
   "scripts": {
     "build": "node ./devtools/build-once.js",
@@ -38,5 +38,8 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af"
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
+  "dependencies": {
+    "turbofely": "^1.0.0"
+  }
 }

@@ -7,6 +7,8 @@ const buildOnce = () => {
   esbuild.build(buildOpts.buildHighlightJSCSSOpts);
   esbuild.build(buildOpts.buildPrismJSCSSOpts);
   esbuild.build(buildOpts.buildJSOpts);
+  esbuild.build(buildOpts.buildTflOpts);
+  console.log("资源构建完成！");
 };
 
 buildOnce();
