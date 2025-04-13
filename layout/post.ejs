@@ -30,7 +30,7 @@
                 <% } %>
                 <% if (page.comments && theme.comments.count.enable_at.includes("post")) { %>
                     <li>
-                        <i class="fa fa-commenting-o"></i>
+                        <i class="fa-solid fa-comments"></i>
                         <%- __('post_meta.comments_count', process_template_path(theme.comments.count.template._shared + theme.comments.count.template.post, page.path, "comments")) %>
                     </li>
                 <% } %>
