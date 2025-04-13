@@ -81,7 +81,7 @@ hexo.once("generateBefore", () => {
           .map(
             (link) =>
               `<li>
-          <a target="_blank" href="${link.link}">
+          <a ${typeof link.blank === "undefined" || link.blank ? "target='_blank'" : ""} href="${link.link}">
             <img src="${link.image}" alt=${link.title} />
             <div>
               <span>${link.title}</span>
@@ -100,7 +100,7 @@ hexo.once("generateBefore", () => {
               while (flist.length > 0) {
                   const randID = Math.floor(Math.random()*flist.length);
                   friendNodes += \`<li>
-                    <a target="_blank" href="\${flist[randID].link}">
+                    <a \${(typeof flist[randID].blank === "undefined") || flist[randID].blank? "target='_blank'": ""} href="\${flist[randID].link}">
                       <img src="\${flist[randID].image}" alt=\${flist[randID].title} />
                       <div>
                         <span>\${flist[randID].title}</span>
