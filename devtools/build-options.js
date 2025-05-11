@@ -83,6 +83,7 @@ const buildJSOpts = {
     "src/js/kr-theme.js",
     "src/js/kr-search.js",
     // "src/js/kr-tfl.js",
+    "src/js/kr-pjax.js",
     "src/js/kr-modal/donate.js",
     "src/js/kr-modal/share.js",
   ],
